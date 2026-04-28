@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Simple Calculator</title>
+    <style>
+        body{background: linear-gradient(145deg,rgb(202, 74, 74),rgb(180, 180, 53),rgb(175, 125, 32),rgb(32, 129, 32),rgb(117, 95, 95));}
+        table { border: 1px solid black; margin-left: auto; margin-right: auto; }
+        input[type="button"] { width: 100%; padding: 20px; font-size: 20px; }
+       td{border-style: ridge;
+    border-color: brown;
+/* border-radius: 1rem; */
+
+box-shadow: 20px 10px 5px  rgba(red, green, blue, alpha);
+border-width: 0.2rem;
+}
+       
+       
+        input[type="text"] { padding: 20px; font-size: 20px; text-align: right; }
+    </style>
+</head>
+<body>
+    <table id="calcu">
+        <tr>
+            <td colspan="3"><input type="text" id="result"></td>
+            <td><input type="button" value="AC" onclick="clr()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="dis('1')"></td>
+            <td><input type="button" value="2" onclick="dis('2')"></td>
+            <td><input type="button" value="3" onclick="dis('3')"></td>
+            <td><input type="button" value="/" onclick="dis('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="dis('4')"></td>
+            <td><input type="button" value="5" onclick="dis('5')"></td>
+            <td><input type="button" value="6" onclick="dis('6')"></td>
+            <td><input type="button" value="*" onclick="dis('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="dis('7')"></td>
+            <td><input type="button" value="8" onclick="dis('8')"></td>
+            <td><input type="button" value="9" onclick="dis('9')"></td>
+            <td><input type="button" value="-" onclick="dis('-')"></td>
+        </tr>
+        <tr>
+            
+            <td><input type="button" value="0" onclick="dis('0')"></td>
+            <td><input type="button" value="." onclick="dis('.')"></td>
+            <td><input type="button" value="=" onclick="solve()"></td>
+            <td><input type="button" value="+" onclick="dis('+')"></td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
